@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+
+        <div class="main_nav flex container">
+            <a href="#" onclick="reload()" class="company_logo">
+                <img src="https://th.bing.com/th/id/R.634ebc24e55ed000574c51e79f33b204?rik=%2fDnkFpZ0ijEaMA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_45428.png&ehk=CzdUHKj1ClrGKkme5CsrcXLnY%2fiSm3x8F8csUJUZ64g%3d&risl=&pid=ImgRaw&r=0" alt="company_logo">
+            </a>
+            <div class="nav_links ">
+                <ul class="flex ">
+
+                    <li class="hover_link nav_iteam" id="ipl" onclick="onNavClick('ipl')">IPL</li>
+                    <li class="hover_link nav_iteam" id="finance" onclick="onNavClick('finance')">Finance</li>
+                    <li class="hover_link nav_iteam" id="politics"onclick="onNavClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search_bar flex">
+                <input type="text" class="search_input" placeholder="e.g. Science" id="news_input">
+                <button class="search_btn" id="search_btn">Search</button>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <main>
+        <div class="cards_container container flex" id="cards_container">
+          
+        </div>    
+    </main>
+
+<template id="template_news_card">
+    <div class="card">
+        <div class="card_header">
+           <img  class="news_img" id="news_img"  src="https://via.placeholder.com/400x200" alt="News image">
+        </div>
+   
+       <div class="card_contant">
+            <h3 class="news_title" id="news_title">This is Title</h3>
+            <h6 class="news_source" id="news_source">End Gadget  26/01/2001</h6>
+            <p class="news_desc" id="news_desc"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ipsam sit illo distinctio laboriosam ullam id eos quis tenetur qui.</p>
+
+       </div>
+   </div>
+</template>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
